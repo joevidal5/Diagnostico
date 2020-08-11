@@ -4,11 +4,11 @@ $(document).ready(function(){
         $('#principal').load("productos/anillos.html");
     })
 
-    $('#productosMujeres').click(function(){
-        $('#principal').load("productosMujeres.html");
+    $("#logo").click(function(){
+        location.reload(true);
     })
 
-    $("#volver").click(function(){
+    $("#home").click(function(){
         location.reload(true);
     })
 
