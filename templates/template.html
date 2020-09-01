@@ -12,13 +12,14 @@
     <title>Ricciardi Joyas</title>
 </head>
 
-<body>
-    <header class="header container-fluid fadeInDown" style = "display: flex; margin-right: 0px;padding-right: 0px;">
+<body class = "fadeInDown">
+    <header class="header container-fluid " style = "display: flex; margin-right: 0px;padding-right: 0px;">
         <div class = "col-9">
             <a id = "logo" href="#">
                 <img src="../static/img/logo.png"   >
             </a>
         </div>
+<<<<<<< HEAD:templates/template.html
         <div class = "col-2">
             <img  src="../static/img/Mirtha-Legrand.png"  >
         </div>
@@ -35,11 +36,30 @@
                     </button>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{ url_for('anillos') }}">Anillos</a>
+=======
+        <div class = "col-2" >
+            <img  src="img/Mirtha-Legrand.png"  >
+        </div>
+    </header>
+        <nav class="container-fluid navbar navbar-dark bg-warning" >
+            <form class="container form-inline">
+                <div class="col-3 btn-group-vertical dropright " >
+                    <button type="button" class="btn btn-secondary " id = "home">
+                        HOME
+                    </button>
+                </div>
+                <div class="col-3 btn-group-vertical dropright "  >
+                    <button type="button" class="btn btn-secondary dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id = "anillos" href="#">Anillos</a>
+>>>>>>> 43c3300ff02b055aae5512a666c0cbad204015c5:index.html
                         <a class="dropdown-item" id = "collares" href="#">Collares artesanales</a>
                     </div>
                 </div>
-                <div class="btn-group-vertical dropright btn-block" style = "margin-top: 10px;">
-                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="col-3 btn-group-vertical dropright " >
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Exclusivos
                     </button>
                     <div class="dropdown-menu">
@@ -48,13 +68,80 @@
                         <a class="dropdown-item" id = "joyas" href="#">Diamantes</a>
                     </div>
                 </div>
-                <button type="button" class="btn btn-warning btn-block" id = "outlet" >
-                        OUTLET 
-                </button>
+                <div class="col-3 btn-group-vertical dropright " >
+                    <button type="button" class="btn btn-secondary" id = "outlet" >
+                            OUTLET 
+                    </button>
+                </div>
+            </form>
+        </nav>
+        <div class="main row" style = "margin-left: 6%; margin-right: 6%;">
+            <div class="col-2" style = "background-color: rgb(71, 71, 71);">
             </div>
+<<<<<<< HEAD:templates/template.html
             <div class="col-8">
                 {% block contenido %}
                 {% endblock %}
+=======
+            <div class="col-8" id = "principal">
+                <a id = "outletPropaganda" href="#">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide border" data-ride="carousel" style = "margin-top: 10px; display: flex">
+                        <div class = "col-3">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/outlet/anillosOutlet.jpg" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/outlet/anillosOutlet1.jpg" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/outlet/collarOutlet.jpg" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/outlet/collarOutlet1.jpg" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/outlet/rolexOutlet.jpg" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/outlet/rolexoutlet1.jpg" >
+                                </div>
+                            </div>
+                        </div>
+                        <div style = "margin-top: 5%;">
+                            <h1>50% OFF EN ANILLOS DE COMPROMISO, COLLARES, ROLEX Y MUCHO MAS!!!</h1>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <center>
+                    <h1>¿QUE COMPRAMOS?</h1>
+                </center>
+                <div style = "display: flex;">
+                    <div style = "margin : 6%">
+                        <center>
+                            <h3>JOYAS Y ALHAJAS</h3>
+                            <img src="img/alhajas.jpg">
+                            <h5>La mejor cotizacion del mercado</h5>
+                        </center>
+                    </div>
+                    <div style = "margin-left: 15%; margin-top: 5%">
+                        <center>
+                            <h3>RELOJES</h3>
+                            <img src="img/reloj.jpg">
+                            <h5>Compramos relojes de todas las marcas al mejor precio</h5>
+                        </center>
+                    </div>
+                </div>
+                <center>
+                    <hr>
+                    <h1>¿QUE OFRECEMOS?</h1>
+                    <hr>
+                    <h3>Ofrecemos la mejor calidad en joyas y alhajas con importantes descuentos para la comodidad de nuestros clientes.</h3>
+                </center>
+                <br>
+                <br>
+>>>>>>> 43c3300ff02b055aae5512a666c0cbad204015c5:index.html
             </div>
             <div class="col-2" style = "background-color: rgb(71, 71, 71);">
                 <div style = "padding-bottom: 10px; padding-top: 5px;">
@@ -75,19 +162,31 @@
         </div>
     </div>
     <footer id= "sticky-footer" class="py-4 bg-azure text-white-50 fadeInUp" style = "margin-top: 0%">
+<<<<<<< HEAD:templates/template.html
         <div class = "container" style = " display: flex;">
+=======
+        <div class = "container" style = "; display: flex;">
+>>>>>>> 43c3300ff02b055aae5512a666c0cbad204015c5:index.html
             <div class="col-9 ">
                 <a style = "margin-left: 5%;" target="_blank" href = "https://www.esab.com.ar/ar/sp/support/upload/esab-terminos-condiciones-de-venta-v2-jul2016.pdf">Termino y condiciones</a>
                 <hr>
             </div>
             <div class = "col-1">
                 <a href = "https://www.instagram.com/">
+<<<<<<< HEAD:templates/template.html
                     <img class="imgFooter" src="../static/img/insta.png" >
+=======
+                    <img class="imgFooter" src="img/insta.png" >
+>>>>>>> 43c3300ff02b055aae5512a666c0cbad204015c5:index.html
                 </a>
             </div>
             <div class = "col-1">
                 <a href = "https://www.facebook.com/">
+<<<<<<< HEAD:templates/template.html
                     <img class="imgFooter" src="../static/img/face.png" >
+=======
+                    <img class="imgFooter" src="img/face.png" >
+>>>>>>> 43c3300ff02b055aae5512a666c0cbad204015c5:index.html
                 </a>
             </div>
         </div>
